@@ -5,9 +5,10 @@ import apiRoute from "./routes/api";
 
 const app = new Hono()
 
-app.route("/api", apiRoute)
+app.get("/", c => {
+  return c.json({ message: "Success" })
+})
 
-app.get("*", serveStatic({ root: "./public" }))
-app.get("*", serveStatic({ root: "./public/index.html" }))
+app.route("/api", apiRoute)
 
 export default app

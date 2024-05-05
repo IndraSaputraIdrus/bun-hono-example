@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "bun --watch ./src/index.ts",
     "build": "bun build ./src/index.ts --outdir ./build",
-    "start": "bun run build && bun ./build/index.js"
+    "start": "bun install && bun run build && bun ./build/index.js"
   },
   "devDependencies": {
     "@types/bun": "latest"

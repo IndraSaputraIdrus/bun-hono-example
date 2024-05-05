@@ -1,9 +1,10 @@
 {
   "version": 2,
+  "outputDirectory": ".",
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/build/index.js"
+      "destination": "/"
     }
   ]
 }
