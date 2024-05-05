@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "bun --watch ./src/index.ts",
-    "build": "bun build ./src/index.ts --outdir ./build",
-    "start": "bun install && bun run build && bun ./build/index.js"
+    "build": "bun install && bun build ./src/index.ts --outdir ./build",
+    "start": "bun run build && bun ./build/index.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
